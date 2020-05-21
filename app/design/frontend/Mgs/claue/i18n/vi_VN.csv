@@ -8084,7 +8084,7 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "System Configuration","Cấu hình hệ thống",module,Magento_Logging
 "Catalog Price Rules","Catalog Price Rules",module,Magento_Logging
 "Cart Price Rules","Quy luật giá trong giỏ hàng",module,Magento_Logging
-"Admin My Account","Quản trị tài khoản của tôi",module,Magento_Logging
+"Admin My Account","Quản trị tài khoản",module,Magento_Logging
 "Newsletter Queue","Hàng Bản tin",module,Magento_Logging
 "Newsletter Templates","Mẫu bản tin",module,Magento_Logging
 "Newsletter Subscribers","Người đăng kí Bản tin",module,Magento_Logging

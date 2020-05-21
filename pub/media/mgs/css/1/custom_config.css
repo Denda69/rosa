@@ -1,13 +1,14 @@
-@import url('//fonts.googleapis.com/css?family=Poppins:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,900,900italic');@import url('//fonts.googleapis.com/css?family=Libre+Baskerville:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,900,900italic');body{font-family: "Poppins", arial, tahoma;font-weight: normal;}#mainMenu{font-family: "Poppins";}
-				h1{font-family: "Poppins";}
-				h2{font-family: "Poppins";}
-				h3{font-family: "Poppins";}
-				h4{font-family: "Poppins";}
-				h5{font-family: "Poppins";}
-				h6{font-family: "Poppins";}
-				.price, .price-box .price{font-family: "Poppins";}
-				.btn{font-family: "Poppins";}
-				blockquote,.sub-title, .content-heading .block-note{font-family: "Libre Baskerville";}
+@import url('//fonts.googleapis.com/css?family=Noto+Sans:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,900,900italic');body{font-family: "Noto Sans", arial, tahoma;font-weight: normal;font-size:14px;}#mainMenu li a.level0, .navigation ul.container .level0 > a{font-size: 14px;}
+				#mainMenu{font-family: "Noto Sans";}
+				h1{font-family: "Noto Sans";font-size: 14px;}
+				h2{font-family: "Noto Sans";font-size: 14px;}
+				h3{font-family: "Noto Sans";font-size: 14px;}
+				h4{font-family: "Noto Sans";font-size: 14px;}
+				h5{font-family: "Noto Sans";font-size: 14px;}
+				h6{font-family: "Noto Sans";font-size: 14px;}
+				.price, .price-box .price{font-family: "Noto Sans";font-size: 14px;}
+				.btn{font-family: "Noto Sans";font-size: 14px;}
+				blockquote,.sub-title, .content-heading .block-note{font-family: "Noto Sans";font-size: 14px;}
 				.header{position: relative; z-index: 99;}.big-item .products-grid .product-item-info.metro_template .product-top a.photo { padding-top: calc(133.3333% - 10px) !important; }
 .products-grid .big-item .product-item-info.metro_template .product-top a.photo { padding-bottom: calc(133.3333% - 10px) !important; }@media (min-width: 1200px){.cms-index-index .header.header8 .vertical-menu-widget .vertical-menu{padding-bottom: 60px;}}.header.header9 .vertical-menu-widget .vertical-menu {padding-bottom: 31px;}
 .boxed .breadcrumbs ul.items{margin-left:15px}
