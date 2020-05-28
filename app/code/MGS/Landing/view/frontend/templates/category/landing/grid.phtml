@@ -32,7 +32,11 @@
                     <div class="landing-categories--item">
                         <div class="landing-categories--thumb">
                             <a href="<?php echo $block->getCategoryUrl($_category) ?>" title="<?php echo $block->escapeHtml($_category->getName()) ?>">
-                                <img src="<?php echo $block->getImageUrl($_category->getId()); ?>" alt="<?php echo $block->escapeHtml($_category->getName()) ?>" class="img-responsive" />
+                                <img src="<?php echo $block->getImageUrl($_category->getId()); ?>"
+                                     alt="<?php echo $block->escapeHtml($_category->getName()) ?>"
+                                     class="img-responsive"
+                                     width="370" height="370"
+                                />
                             </a>
                             <div class="landing-categories--count">
                                 <?php echo $_category->getProductCount() ?>&nbsp;<?php echo __('product(s)'); ?>

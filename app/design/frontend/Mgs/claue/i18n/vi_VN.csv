@@ -2540,7 +2540,6 @@ and the product descriptor can be up to 18, 14, or 9 characters respectively (wi
 "Watermark Opacity, Percent","Độ mờ, phần trăm của ảnh",module,Magento_Catalog
 "Watermark","Đóng dấu ảnh",module,Magento_Catalog
 "Watermark Position","Vị trí của đóng dấu ảnh",module,Magento_Catalog
-"none","không gì cả",module,Magento_Catalog
 "File validation failed.","File validation failed.",module,Magento_Catalog
 "text","văn bản",module,Magento_Catalog
 "Tier Price","Tầng giá",module,Magento_Catalog
@@ -8298,7 +8297,7 @@ it will make no affect on Price filter.",module,Magento_LayeredNavigation
 "Enable Multiple Wish Lists","Cho phép có nhiều danh sách yêu thích",module,Magento_MultipleWishlist
 "Number of Multiple Wish Lists","Số lượng đa danh sách yêu thích",module,Magento_MultipleWishlist
 "The number of multiple wish lists should be equal to or more than 2.","Số lượng đa danh sách yêu thích nên nhiều hơn hoặc bằng 2.",module,Magento_MultipleWishlist
-"My Wish Lists Link","Liên kết danh sách yêu thích của tôi",module,Magento_MultipleWishlist
+"My Wish Lists Link","Liên kết sản phẩm yêu thích",module,Magento_MultipleWishlist
 "Display Wish Lists Summary","Hiện thị tóm tắt danh sách yêu thích",module,Magento_MultipleWishlist
 "Wish List Search Description","Mô tả tìm kiếm Danh sách yêu thích",module,Magento_MultipleWishlist
 "Quick Search Form Types","Tìm kiếm nhanh chóng các loại biểu mẫu",module,Magento_MultipleWishlist
@@ -11106,7 +11105,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "You deleted the rating.","Bạn đã xoá các xếp hạng.",module,Magento_Review
 "Ratings","Xếp hạng",module,Magento_Review
 "You saved the rating.","Bạn đã lưu các xếp hạng.",module,Magento_Review
-"My Product Reviews","Đánh giá sản phẩm của tôi",module,Magento_Review
+"My Product Reviews","Đánh giá sản phẩm",module,Magento_Review
 "Cannot initialize product","Không thể khởi tạo sản phẩm",module,Magento_Review
 "You submitted your review for moderation.","Bạn đã gửi nhận xét của bạn để kiểm duyệt.",module,Magento_Review
 "We can't post your review right now.","Chúng tôi không thể đăng bài nhận xét của bạn ngay bây giờ.",module,Magento_Review
@@ -11948,7 +11947,7 @@ target=""_blank"">DevDocs' Release Information</a>.,module,Magento_ReleaseNotifi
 "Back to My Orders","Quay lại đơn đặt hàng của tôi",module,Magento_Sales
 "View Another Order","Xem một đơn đặt hàng",module,Magento_Sales
 "About Your Refund","Về hoàn phí của bạn",module,Magento_Sales
-"My Orders","Đơn đặt hàng của tôi",module,Magento_Sales
+"My Orders","Đơn đặt hàng",module,Magento_Sales
 "Subscribe to Order Status","Theo dõi tình trạng đơn hàng",module,Magento_Sales
 "About Your Invoice","Về hoá đơn của bạn",module,Magento_Sales
 "Print Order # %1","In đơn đặt hàng # %1",module,Magento_Sales
@@ -16026,7 +16025,7 @@ formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
 "Inserting a widget does not create a widget instance.","Inserting a widget does not create a widget instance.",module,Magento_Widget
 "Wish List","Danh sách mong muốn",module,Magento_Wishlist
 "Wish List Sharing","Chia sẻ danh sách yêu thích",module,Magento_Wishlist
-"My Wish List","Danh sách yêu thích của tôi",module,Magento_Wishlist
+"My Wish List","Sản phẩm yêu thích",module,Magento_Wishlist
 "%1's Wish List","Danh sách yêu thích của %1",module,Magento_Wishlist
 "Page not found.","Không tìm thấy trang.",module,Magento_Wishlist
 "We can't specify a product.","Chúng tôi không thể chỉ định một sản phẩm.",module,Magento_Wishlist

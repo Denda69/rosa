@@ -1,13 +1,13 @@
-<?php $html = $this->getHtmlSlider(); ?>
-<?php $fullwidth = $this->getFullscreen(); ?>
-<?php $fullheight = $this->getFullheight(); ?>
-<?php $offset = $this->getOffset(); ?>
+<?php $html = $block->getHtmlSlider(); ?>
+<?php $fullwidth = $block->getFullscreen(); ?>
+<?php $fullheight = $block->getFullheight(); ?>
+<?php $offset = $block->getOffset(); ?>
 
 <?php if($html != ""): ?>
-	<?php $tpControls = $this->getTemplateControls() ?>
-	<?php $customclass = $this->getCustomclass() ?>
+	<?php $tpControls = $block->getTemplateControls() ?>
+	<?php $customclass = $block->getCustomclass() ?>
 	<?php $blockId = rand() . time(); ?>
-	<?php $animated = $this->getAnimateSlider(); ?>
+	<?php $animated = $block->getAnimateSlider(); ?>
     
     <div id="page-header-sliders" class="page-header-sliders template-<?php echo $tpControls ?> <?php if($fullheight): ?> fullscreen-slider<?php endif ?><?php if($fullwidth): ?> full-width<?php endif ?>">
     
@@ -31,9 +31,9 @@
                     <?php if($offset): ?>
                         var offset = $('<?php echo $offset ?>').height();
                     <?php endif ?>
-                    
-					$(".fullscreen-slider").height(sliderHeight - offset);
-					
+
+					// $(".fullscreen-slider").height(sliderHeight - offset);
+
 					$(window).resize(function() {
 						$(".fullscreen-slider").height($(window).height() - offset);
 					});
