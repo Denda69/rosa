@@ -1963,13 +1963,14 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function getLogoRosa()
     {
-        $src = $this->_logo->getLogoSrc();
-        if (empty($src)) {
+        if (empty($this->_logo->getLogoSrc())) {
             $html = '';
         } else {
             $html = '<strong class="logo">'.
-                    '<img src="'.$src.'" alt="'.$this->_logo->getLogoAlt().'" width="'.$this->_logo->getLogoWidth().'" height="'.$this->_logo->getLogoHeight().'">
-                    </strong>';
+                        '<a href="'.$this->getUrlBuilder()->getBaseUrl().'">
+                            <img src="'.$this->_logo->getLogoSrc().'" alt="' .$this->_logo->getLogoAlt().'" width="' .$this->_logo->getLogoWidth().'" height="' .$this->_logo->getLogoHeight().'">
+                        </a>'.
+                    '</strong>';
         }
 
         return $html;
