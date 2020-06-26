@@ -1,15 +1,10 @@
 <?php $helper = $this->helper('MGS\Mpanel\Helper\Data') ?>
 <?php $header = $helper->getStoreConfig('mgstheme/general/header') ?>
 <?php $canUsePanel = $helper->acceptToUsePanel() ?>
-<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); ?>
-<?php $customerSession = $objectManager->create('Magento\Customer\Model\Session'); ?>
-<?php $customerUrl = $objectManager->create('Magento\Customer\Model\Url'); ?>
-
-<?php // Variable Layout Element ?>
 <?php $miniCart = $block->getChildHtml('minicart'); //Mini Cart ?>
 <?php $storeLanguage = $block->getChildHtml('store_language'); //Language Option ?>
 <?php $currency = $block->getChildHtml('currency'); //Currenct Option ?>
-<?php $logo = $block->getChildHtml('logo'); //Logo ?>
+<?php $logo = $helper->getLogoRosa(); //Logo ?>
 
 <?php $mgsMegamenu = $block->getChildHtml('megamenu'); // MGS_Megamenu ?>
 <?php if (!$helper->isActiveModule('MGS_Mmegamenu')) {
@@ -411,10 +406,6 @@
                         </div>
                     <?php endif ?>
                 </div>
-<!--                <div class="col-md-4 hidden-sm hidden-xs col-xs-12">-->
-<!--                    --><?php //echo $storeLanguage ?>
-<!--                    --><?php //echo $currency ?>
-<!--                </div>-->
             </div>
         </div>
     </div>
