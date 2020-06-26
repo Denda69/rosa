@@ -403,7 +403,7 @@
     <div class="top-header-content">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-xs-12">
+                <div class="col-md-12 col-xs-12">
                     <!-- Static block: header_8_top_left_link -->
                     <?php if($topLeftBlock): ?>
                         <div class="top-custom-link">
@@ -411,10 +411,10 @@
                         </div>
                     <?php endif ?>
                 </div>
-                <div class="col-md-4 hidden-sm hidden-xs col-xs-12">
-                    <?php echo $storeLanguage ?>
-                    <?php echo $currency ?>
-                </div>
+<!--                <div class="col-md-4 hidden-sm hidden-xs col-xs-12">-->
+<!--                    --><?php //echo $storeLanguage ?>
+<!--                    --><?php //echo $currency ?>
+<!--                </div>-->
             </div>
         </div>
     </div>
@@ -428,9 +428,14 @@
 
                 <div class="col-lg-3 col-md-2 col-xs-6">
                     <div class="table-icon-menu pull-right">
-                        <?php echo $htmlTopLink ?>
+
+                        <?php echo $miniCart ?>
 
                         <?php echo $htmlWishlist; ?>
+
+                        <?php echo $htmlTopLink ?>
+
+
 
                         <div class="search-form select-search">
                             <div class="actions-search visible-sm visible-xs">
@@ -438,7 +443,7 @@
                             </div>
                         </div>
 
-                        <?php echo $miniCart ?>
+
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@
 $helper = $this->helper(\Mageplaza\Search\Helper\Data::class);
 if ($helper->isEnabled()) : ?>
     <?php if ($helper->getConfigGeneral('category/enable')) : ?>
-        <div class="search-category" style="position:absolute; top: 0; right: 35px; width: 130px">
+        <div class="search-category">
             <select id="mpsearch-category">
                 <?php foreach ($helper->getCategoryTree() as $id => $name) : ?>
                     <option value="<?= /** @noEscape */ $id ?>"><?= /** @noEscape */ $name ?></option>
