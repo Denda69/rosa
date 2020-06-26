@@ -1770,7 +1770,14 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
 		$request = $this->_objectManager->get('\Magento\Framework\App\Request\Http');
 		return $request->getFullActionName();
 	}
-	public function getPanelUploadSrc($type, $file){
+
+	public function getPanelUploadSrc($type, $file)
+    {
 		return $this->_url->getBaseUrl(['_type' => \Magento\Framework\UrlInterface::URL_TYPE_MEDIA]).'wysiwyg/'.$type.'/' .$file;
 	}
+
+    public function isEnabledBreadcrumbs()
+    {
+        return $this->getStoreConfig('mpanel/breadcrumbs/is_enabled');
+    }
 }
