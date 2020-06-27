@@ -117,13 +117,8 @@ class AddressAttributes implements LayoutProcessorInterface
                 $shippingAddressFieldRowsLayout
             );
 
-//            if (isset($jsLayout['components']['checkout']['children']['shippingAddress']['children']['shipping-address-fieldset']['children']['country-region-zip-field-row']['children']['country_id'])) {
-//                unset($jsLayout['components']['checkout']['children']['shippingAddress']['children']['shipping-address-fieldset']['children']['country-region-zip-field-row']['children']['country_id']);
-//            }
-//
             if (isset($jsLayout['components']['checkout']['children']['shippingAddress']['children']['shipping-address-fieldset']['children']['country-region-zip-field-row']['children']['postcode'])) {
                 unset($jsLayout['components']['checkout']['children']['shippingAddress']['children']['shipping-address-fieldset']['children']['country-region-zip-field-row']['children']['postcode']);
-
             }
 
             $this->regionOptions($jsLayout);
