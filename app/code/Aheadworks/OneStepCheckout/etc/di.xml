@@ -45,6 +45,9 @@
     <type name="Magento\Checkout\Api\TotalsInformationManagementInterface">
         <plugin name="aw_onestepcheckout_guest_totals_information_plugin" type="Aheadworks\OneStepCheckout\Plugin\Checkout\TotalsInformationPlugin"/>
     </type>
+    <type name="Aheadworks\OneStepCheckout\Model\Layout\Processor\AddressAttributes">
+        <plugin name="validate_telephone_checkout_layoutprocessor" type="Aheadworks\OneStepCheckout\Plugin\Checkout\LayoutProcessor"/>
+    </type>
     <type name="Aheadworks\OneStepCheckout\Model\Product\ConfigurationPool">
         <arguments>
             <argument name="configurations" xsi:type="array">
