@@ -1,8 +1,4 @@
 <?php
-/**
- * Copyright © 2015 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
 
 // @codingStandardsIgnoreFile
 
@@ -31,7 +27,7 @@ $disableSearchFull = $mpanelHelper->getStoreConfig('mpanel/catalogsearch/search_
 			   value="<?php /* @escapeNotVerified */ echo $helper->getEscapedQueryText() ?>"
 			   class="input-text form-control"
 			   maxlength="<?php /* @escapeNotVerified */ echo $helper->getMaxQueryLength();?>"
-			   placeholder="<?php echo __('Search for...') ?>"
+			   placeholder="<?= __($mpanelHelper->wellcomePlaceholder()) ?>"
 			   role="combobox"
 			   aria-expanded="true"
 			   aria-haspopup="false"
@@ -45,12 +41,12 @@ $disableSearchFull = $mpanelHelper->getStoreConfig('mpanel/catalogsearch/search_
 			<?php echo $block->getChildHtml() ?>
 		</form>
         <div class="hot-words">
-            <a href="#">muebles</a>
-            <a href="#">nail tips</a>
-            <a href="#">shoes</a>
-            <a href="#">dirt bike</a>
-            <a href="#">biker shorts</a>
-            <a href="#">mobile phones</a>
+            <a href="#">váy</a>
+            <a href="#">đầm</a>
+            <a href="#">áo sơ mi</a>
+            <a href="#">sơ mi kiểu</a>
+            <a href="#">quần short</a>
+            <a href="#">sét đồ</a>
         </div>
 	</div>
 	<div class="actions-search">
