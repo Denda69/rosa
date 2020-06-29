@@ -1,14 +1,14 @@
-@import url('//fonts.googleapis.com/css?family=Poppins:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,900,900italic');@import url('//fonts.googleapis.com/css?family=Libre+Baskerville:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,900,900italic');body{background-color:#ffffff;font-family: "Poppins", arial, tahoma;font-weight: normal;font-size:14px;}#mainMenu li a.level0, .navigation ul.container .level0 > a{font-size: 14px;}
-				#mainMenu{font-family: "Poppins";}
-				h1{font-family: "Poppins";font-size: 14px;}
-				h2{font-family: "Poppins";font-size: 14px;}
-				h3{font-family: "Poppins";font-size: 14px;}
-				h4{font-family: "Poppins";font-size: 14px;}
-				h5{font-family: "Poppins";font-size: 14px;}
-				h6{font-family: "Poppins";font-size: 14px;}
-				.price, .price-box .price{font-family: "Poppins";font-size: 14px;}
-				.btn{font-family: "Poppins";font-size: 14px;}
-				blockquote,.sub-title, .content-heading .block-note{font-family: "Libre Baskerville";font-size: 16px;}
+@import url('//fonts.googleapis.com/css?family=Noto+Sans:300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,900,900italic');body{background-color:#ffffff;font-family: "Noto Sans", arial, tahoma;font-weight: normal;font-size:14px;}#mainMenu li a.level0, .navigation ul.container .level0 > a{font-size: 14px;}
+				#mainMenu{font-family: "Noto Sans";}
+				h1{font-family: "Noto Sans";font-size: 14px;}
+				h2{font-family: "Noto Sans";font-size: 14px;}
+				h3{font-family: "Noto Sans";font-size: 14px;}
+				h4{font-family: "Noto Sans";font-size: 14px;}
+				h5{font-family: "Noto Sans";font-size: 14px;}
+				h6{font-family: "Noto Sans";font-size: 14px;}
+				.price, .price-box .price{font-family: "Noto Sans";font-size: 14px;}
+				.btn{font-family: "Noto Sans";font-size: 14px;}
+				blockquote,.sub-title, .content-heading .block-note{font-family: "Noto Sans";font-size: 16px;}
 				.top-header-content a:hover, .top-header-content .dropdown-switcher .switcher-toggle:hover{color: #ff4747 !important;}.header .dropdown-switcher .dropdown-menu li > a:hover, .header .dropdown-switcher .dropdown-menu li > a:focus{color: #ff4747 !important;}.middle-header-content a:hover{color: #ff4747 !important;}.header .search-form .actions-search .action-search:hover,.header .dropdown-toplinks .dropdown-toggle:hover,.header .dropdown-toplinks:hover .dropdown-toggle,.header .header-wl a:hover,.header .dropdown-toplinks.open .dropdown-toggle,.minicart-wrapper .action.showcart:hover::before, .minicart-wrapper .action.showcart:active::before{color: #ff4747 !important;}#mainMenu .level0:hover a.level0{color: #ff4747 !important;}a:hover,a:focus{color: #ff4747 !important;}.header{position:relative;z-index:99}.big-item .products-grid .product-item-info.metro_template .product-top a.photo{padding-top:calc(133.3333% - 10px)!important}.products-grid .big-item .product-item-info.metro_template .product-top a.photo{padding-bottom:calc(133.3333% - 10px)!important}@media (min-width:1200px){.cms-index-index .header.header8 .vertical-menu-widget .vertical-menu{padding-bottom:0px;    box-shadow: 0 1px 4px rgba(0,0,0,.08);}.header.header10 .navigation .nav-main-menu{transform:translateX(20px);-moz-transform:translateX(20px);-webkit-transform:translateX(20px);-ms-transform:translateX(20px)}}.header.header9 .vertical-menu-widget .vertical-menu{padding-bottom:31px}.rotate-image-container .rotate-j360{cursor:move}.mgs-quickview-catalog-product-view .product-detail-infomation.col-xs-12{height:auto!important}
 @media (min-width: 1200px){.header .close-nav-button{left:-50px}}
 @media (max-width: 767px) {.sub-categories{display: none}}

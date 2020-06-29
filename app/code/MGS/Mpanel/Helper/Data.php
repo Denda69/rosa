@@ -1989,17 +1989,17 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     public function wellcomePlaceholder()
     {
         $customer = $this->customerSession->getCustomer();
-        $placeholder = null;
+        $placeholder = '';
         $time = date('H:i', strtotime('+7 hour', strtotime(gmdate('H:i'))));
-        
+
         if ($customer->getId() || $customer->getEmail()) {
             if($time>="06:00" && $time<="10:59"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì sáng nay?');
-            } elseif($time>="11:00" && $time<="12:59"){
+            } else if($time>="11:00" && $time<="12:59"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì trưa nay?');
-            } elseif($time>="13:00" && $time<="17:59"){
+            } else if($time>="13:00" && $time<="17:59"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì chiều nay?');
-            } elseif($time>="18:00" && $time<="21:00"){
+            } else if($time>="18:00" && $time<="21:00"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì tối nay?');
             } else {
                 $placeholder = __("Tìm tên, sản phẩm, thương hiệu... ?");
