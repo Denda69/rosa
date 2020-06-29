@@ -61,6 +61,7 @@
                 <custom_block_sidebar>1</custom_block_sidebar>
 			</sidebar_config>
 			<breadcrumbs>
+				<is_enabled>0</is_enabled>
                 <fullwidth>1</fullwidth>
 			</breadcrumbs>
         </mpanel>

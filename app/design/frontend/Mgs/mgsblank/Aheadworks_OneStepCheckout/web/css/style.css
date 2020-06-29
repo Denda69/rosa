@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'aw-osc_icons-font';
     src: url('icons-font/fonts/aw-osc_icons-font.eot');
-    src: url('icons-font/fonts/aw-osc_icons-font.eot?#iefix') format('embedded-opentype'), url('../Aheadworks_OneStepCheckout/css/icons-font/fonts/aw-osc_icons-font.woff2') format('woff2'), url('icons-font/fonts/aw-osc_icons-font.woff') format('woff'), url('icons-font/fonts/aw-osc_icons-font.ttf') format('truetype'), url('css/icons-font/fonts/aw-osc_icons-font.svg#aw-osc_icons-font') format('svg');
+    src: url('icons-font/fonts/aw-osc_icons-font.eot?#iefix') format('embedded-opentype'), url('icons-font/fonts/aw-osc_icons-font.woff2') format('woff2'), url('icons-font/fonts/aw-osc_icons-font.woff') format('woff'), url('icons-font/fonts/aw-osc_icons-font.ttf') format('truetype'), url('icons-font/fonts/aw-osc_icons-font.svg#aw-osc_icons-font') format('svg');
     font-weight: normal;
     font-style: normal
 }
@@ -136,7 +136,7 @@
     padding-right: 30px;
     background-repeat: no-repeat !important;
     background-position: calc(100% - 10px) 50% !important;
-    background: url(../Aheadworks_OneStepCheckout/images/arrow_down.svg);
+    background: url(../images/arrow_down.svg);
     background-size: 13px !important
 }
 
