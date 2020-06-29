@@ -6,11 +6,23 @@ use Magento\Framework\App\Helper\AbstractHelper;
 
 class Search extends AbstractHelper
 {
+    /**
+     * @var \Magento\Search\Api\SearchInterface
+     */
+    private $_objectManager;
+
+    /**
+     * Search constructor.
+     * @param \Magento\Framework\App\Helper\Context $context
+     * @param \Magento\Search\Api\SearchInterface $search
+     * @param \Magento\Framework\ObjectManagerInterface $objectManager
+     */
     public function __construct(
-        \Magento\Framework\App\Helper\Context $context, 
+        \Magento\Framework\App\Helper\Context $context,
+        \Magento\Search\Api\SearchInterface $search,
         \Magento\Framework\ObjectManagerInterface $objectManager
     ) { 
-        $this->_objectManager= $objectManager; 
+        $this->_objectManager = $objectManager;
         parent::__construct($context);
     }
 
@@ -21,21 +33,12 @@ class Search extends AbstractHelper
             return false;
         }
 
-        $search = $this->_objectManager->create(
-            '\Magento\Search\Api\SearchInterface');
+        $search = $this->_objectManager->create('\Magento\Search\Api\SearchInterface');
+        $searchCriteriaBuilder = $this->_objectManager->create('\Magento\Framework\Api\Search\SearchCriteriaBuilder');
+        $filterBuilder = $this->_objectManager->create('\Magento\Framework\Api\FilterBuilder');
 
-        $searchCriteriaBuilder = $this->_objectManager->create(
-            '\Magento\Framework\Api\Search\SearchCriteriaBuilder');
-
-        $filterBuilder = $this->_objectManager->create(
-            '\Magento\Framework\Api\FilterBuilder');
-
-        $filterBuilder
-            ->setField('search_term')
-            ->setValue($searchQuery);
-
+        $filterBuilder->setField('search_term')->setValue($searchQuery);
         $searchCriteriaBuilder->addFilter($filterBuilder->create());
-
         $searchCriteria = $searchCriteriaBuilder->create();
 
         $searchCriteria->setRequestName('quick_search_container');

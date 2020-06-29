@@ -4,6 +4,7 @@
  * See COPYING.txt for license details.
  */
 namespace MGS\AjaxCart\Block;
+
 class AjaxCart extends \Magento\Framework\View\Element\Template
 {
 	public function __construct(
@@ -12,7 +13,4 @@ class AjaxCart extends \Magento\Framework\View\Element\Template
 	){	
 		 parent::__construct($context, $data);
 	}
-	
-	
-	
 }

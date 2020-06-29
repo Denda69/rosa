@@ -1,7 +1,12 @@
-<?php $megaMenu = $this->getMegamenuItems(); ?>
-<?php $themeHelper = $this->helper('MGS\Mmegamenu\Helper\Data') ?>
-<?php $objectManager =  \Magento\Framework\App\ObjectManager::getInstance(); ?>      
-<?php $logo = $objectManager->get('\Magento\Theme\Block\Html\Header\Logo'); ?>
+<?php
+/** @var $block \MGS\Mmegamenu\Block\Mmegamenu */
+$megaMenu = $block->getMegamenuItems();
+/** @var $themeHelper \MGS\Mmegamenu\Helper\Data */
+$themeHelper = $this->helper(\MGS\Mmegamenu\Helper\Data::class);
+/** @var $mpaHelper \MGS\Mpanel\Helper\Data */
+$mpaHelper = $this->helper(\MGS\Mpanel\Helper\Data::class);
+?>
+<?php $logo = $mpaHelper->getLogo() ?>
 
 <?php if((count($megaMenu)>0) || $themeHelper->getStoreConfig('megamenu/general/home')):?>
 	<?php if($themeHelper->getStoreConfig('megamenu/general/homeposition') == "" || $themeHelper->getStoreConfig('megamenu/general/homeposition') == 0): ?>
@@ -52,11 +57,11 @@
 							<?php if($themeHelper->getStoreConfig('megamenu/general/homelogo')): ?>
 								<?php if(!$this->isHomePage()): ?>
 									<a href="<?php echo $this->getUrl() ?>" class="level0">
-								<?php else: ?>
-									<strong class="logo">
-								<?php endif ?>
-									<img src="<?php echo $logo->getLogoSrc() ?>" alt="<?php echo $logo->getLogoAlt() ?>" width="<?php echo $logo->getLogoWidth() ?>" height="<?php echo $logo->getLogoHeight() ?>">
-								<?php if(!$this->isHomePage()): ?>
+                                    <?php else: ?>
+                                        <strong class="logo">
+                                    <?php endif ?>
+                                        <img src="<?php echo $logo->getLogoSrc() ?>" alt="<?php echo $logo->getLogoAlt() ?>" width="<?php echo $logo->getLogoWidth() ?>" height="<?php echo $logo->getLogoHeight() ?>">
+                                    <?php if(!$this->isHomePage()): ?>
 									</a>
 								<?php else: ?>
 									</strong>

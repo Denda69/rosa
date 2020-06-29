@@ -4,10 +4,23 @@ namespace MGS\Ajaxlayernavigation\Model\Layer\Filter;
 class Attribute extends \MGS\Ajaxlayernavigation\Model\Layer\Filter\DefaultFilter
 {
     protected $tagFilter;
-    public $appliyedFilter;
-    public $filterPlus;
-    public $serchHelper;
 
+    protected $filterPlus;
+    protected $serchHelper;
+    protected $_resourceModel;
+
+    /**
+     * Attribute constructor.
+     * @param ItemFactory $filterItemFactory
+     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
+     * @param \Magento\Catalog\Model\Layer $layer
+     * @param ItemBuilder $itemBuilder
+     * @param \MGS\Ajaxlayernavigation\Model\ResourceModel\Layer\Filter\AttributeFactory $attributeFactory
+     * @param \Magento\Framework\Stdlib\StringUtils $string
+     * @param \Magento\Framework\Filter\StripTags $tagFilter
+     * @param \MGS\Ajaxlayernavigation\Helper\Search $serchHelper
+     * @param array $data
+     */
     public function __construct(
         \MGS\Ajaxlayernavigation\Model\Layer\Filter\ItemFactory $filterItemFactory,
         \Magento\Store\Model\StoreManagerInterface $storeManager,

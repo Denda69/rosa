@@ -20,7 +20,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Store\Model\StoreManagerInterface $storeManager
-    ){
+    ) {
         parent::__construct($context);
         $this->_scopeConfig = $context->getScopeConfig();
         $this->_storeManager = $storeManager;
@@ -53,8 +53,8 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function getConfig($path)
     {
-        return $this->_scopeConfig->getValue($path, \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $this->getStoreId());
-
+        return $this->_scopeConfig->getValue($path,
+            \Magento\Store\Model\ScopeInterface::SCOPE_STORE, $this->getStoreId()
+        );
     }
-
 }

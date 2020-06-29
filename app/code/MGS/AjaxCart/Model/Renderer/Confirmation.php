@@ -36,7 +36,7 @@ class Confirmation extends AbstractRenderer
     private $priceCurrency;
 
     /**
-     * @var MGS\AjaxCart\Helper\Data
+     * @var \MGS\AjaxCart\Helper\Data
      */
     protected $aHelper;
 	

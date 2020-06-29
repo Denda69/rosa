@@ -25,7 +25,6 @@ define([
                     }
                 });
             }
-            
         },
         getActionId: function() {
             return 'catalog-add-to-cart-' + jQuery.now()

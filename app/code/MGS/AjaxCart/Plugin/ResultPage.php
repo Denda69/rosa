@@ -2,6 +2,10 @@
 
 namespace MGS\AjaxCart\Plugin;
 
+/**
+ * Class ResultPage
+ * @package MGS\AjaxCart\Plugin
+ */
 class ResultPage
 {
 
@@ -29,12 +33,10 @@ class ResultPage
     }
 
     /**
-     * Adding the default catalog_product_view_type_ handles as well
-     * 
      * @param \Magento\Framework\View\Result\Page $subject
      * @param array $parameters
-     * @param type $defaultHandle
-     * @return type
+     * @param null $defaultHandle
+     * @return array
      */
     public function beforeAddPageLayoutHandles(
         \Magento\Framework\View\Result\Page $subject, 
@@ -50,9 +52,7 @@ class ResultPage
 
                 return [$parameters, 'catalog_product_view'];
             }
-        } else {
-            return [$parameters, $defaultHandle];
         }
+        return [$parameters, $defaultHandle];
     }
-
 }

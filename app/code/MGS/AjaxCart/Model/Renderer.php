@@ -1,10 +1,8 @@
 <?php
 namespace MGS\AjaxCart\Model;
 
-use \MGS\AjaxCart\Model\Renderer\Cart;
 use \MGS\AjaxCart\Model\Renderer\Confirmation;
 use \MGS\AjaxCart\Model\Renderer\Related;
-use \MGS\AjaxCart\Model\Renderer\Options;
 
 /**
  * Block Renderer

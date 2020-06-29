@@ -6,9 +6,35 @@ use MGS\Ajaxlayernavigation\Model\Layer\Filter\Item as FilterItem;
 
 class RenderLayered extends \Magento\Framework\View\Element\Template
 {
-     
+    /**
+     * @var string
+     */
     protected $_template = 'Magento_Swatches::product/layered/renderer.phtml';
 
+    /**
+     * @var \Magento\Eav\Model\Entity\Attribute
+     */
+    protected $eavAttributeModel;
+
+    /**
+     * @var \Magento\Swatches\Helper\Data
+     */
+    protected $swatchesHelper;
+
+    /**
+     * @var \Magento\Swatches\Helper\Media
+     */
+    protected $mediaHelper;
+
+    /**
+     * RenderLayered constructor.
+     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param \Magento\Eav\Model\Entity\Attribute $eavAttributeModel
+     * @param \MGS\Ajaxlayernavigation\Model\ResourceModel\Layer\Filter\AttributeFactory $customAttribute
+     * @param \Magento\Swatches\Helper\Data $swatchesHelper
+     * @param \Magento\Swatches\Helper\Media $mediaswatchHelper
+     * @param array $data
+     */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         \Magento\Eav\Model\Entity\Attribute $eavAttributeModel,
@@ -25,6 +51,10 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         parent::__construct($context, $data);
     }
 
+    /**
+     * @param $filter
+     * @return $this
+     */
     public function setSwatchFilter($filter)
     {
         $this->filterModel = $filter;
@@ -33,6 +63,9 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         return $this;
     }
 
+    /**
+     * @return array
+     */
     public function getSwatchData()
     {
         
@@ -64,6 +97,11 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         return $data;
     }
 
+    /**
+     * @param $code
+     * @param $id
+     * @return string
+     */
     public function buildUrl($code, $id)
     {
         return $this->_urlBuilder->getUrl(
@@ -76,6 +114,10 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         );
     }
 
+    /**
+     * @param Option $option
+     * @return array
+     */
     protected function getIsUnused(Option $option)
     {
         return [
@@ -85,6 +127,11 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         ];
     }
 
+    /**
+     * @param array $items
+     * @param $option
+     * @return array|bool
+     */
     protected function getCurrentOption(array $items, $option)
     {
         $result = false;
@@ -96,6 +143,11 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         return $result;
     }
 
+    /**
+     * @param $item
+     * @param $option
+     * @return array
+     */
     protected function getViewData($item,$option)
     {
         $custom = '';
@@ -114,21 +166,37 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         ];
     }
 
+    /**
+     * @param $filterItem
+     * @return bool
+     */
     protected function isOptionVisible($filterItem)
     {
         return $this->isDisabled($filterItem) && $this->isShowEmpty() ? false : true;
     }
 
+    /**
+     * @return bool
+     */
     protected function isShowEmpty()
     {
         return $this->eavAttributeModel->getIsFilterable() != 1;
     }
 
+    /**
+     * @param $item
+     * @return bool
+     */
     protected function isDisabled($item)
     {
         return !$item->getCount();
     }
 
+    /**
+     * @param array $items
+     * @param $id
+     * @return bool|mixed
+     */
     protected function getFilterItemById(array $items, $id)
     {
         foreach ($items as $item) {
@@ -139,6 +207,11 @@ class RenderLayered extends \Magento\Framework\View\Element\Template
         return false;
     }
 
+    /**
+     * @param $type
+     * @param $file
+     * @return string
+     */
     public function getSwatchPath($type, $file)
     {
         return $this->mediaHelper->getSwatchAttributeImage($type, $file);

@@ -1,6 +1,10 @@
-<?php $helper = $this->helper('\Magento\Checkout\Helper\Cart'); ?>
+<?php
+/** @var $helper \Magento\Checkout\Helper\Cart */
+$helper = $this->helper('\Magento\Checkout\Helper\Cart'); ?>
 
-<?php $themeHelper = $this->helper('MGS\Mpanel\Helper\Data'); ?>
+<?php
+/** @var $themeHelper \MGS\Mpanel\Helper\Data */
+$themeHelper = $this->helper('MGS\Mpanel\Helper\Data'); ?>
 <?php $cartAnimation = $themeHelper->getStoreConfig('ajaxcart/additional/animation_type'); ?>
 
 <?php if($cartAnimation == 'flycart'): ?>
@@ -48,8 +52,7 @@
         </div>
     </div>
     <script type="text/javascript">
-        require(
-        [
+        require([
             'jquery'
         ],function($){
             $(document).ready(function(){

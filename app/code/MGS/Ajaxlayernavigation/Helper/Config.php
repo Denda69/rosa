@@ -6,6 +6,16 @@ use Magento\Store\Model\ScopeInterface;
 
 class Config extends AbstractHelper
 {
+    /**
+     * @var \Magento\Framework\Pricing\PriceCurrencyInterface
+     */
+    protected $_priceCurrency;
+
+    /**
+     * Config constructor.
+     * @param \Magento\Framework\App\Helper\Context $context
+     * @param \Magento\Framework\Pricing\PriceCurrencyInterface $priceCurrency
+     */
     public function __construct(
         \Magento\Framework\App\Helper\Context $context, 
         \Magento\Framework\Pricing\PriceCurrencyInterface $priceCurrency
@@ -30,6 +40,9 @@ class Config extends AbstractHelper
         return ['prefix' => $prefix, 'postfix' => $postfix];
     }
 
+    /**
+     * @return string
+     */
     public function getClearAllUrl()
     {
         $searchQuery = $this->_getRequest()->getParam('q');
@@ -51,6 +64,7 @@ class Config extends AbstractHelper
             ]
         );
     }
+
     public function iaAjaxEnable()
     {
         return $this->scopeConfig->getValue(

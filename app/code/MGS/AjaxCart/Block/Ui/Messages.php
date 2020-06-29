@@ -27,7 +27,7 @@ class Messages extends \Magento\Framework\View\Element\Template
     protected $_template = 'ui/messages.phtml';
 
     /**
-     * @var MGS\AjaxCart\Helper\Data
+     * @var \MGS\AjaxCart\Helper\Data
      */
     protected $aHelper;
 

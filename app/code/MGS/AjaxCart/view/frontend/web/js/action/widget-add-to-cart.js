@@ -19,7 +19,6 @@ define([
                         'click': self.onClick
                     });
                 }
-                
             });
         },
         getActionId: function() {

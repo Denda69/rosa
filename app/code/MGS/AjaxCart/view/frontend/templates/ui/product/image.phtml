@@ -9,7 +9,7 @@
 	<?php $size = $themeHelper->getImageMinSize(); ?>
 	<div class="popup__image-wrapper">
 		<?php $productImage = $_imagehelper->init($product, $image)->resize($size['width'], $size['height'])->getUrl(); ?>
-		<img class="img-responsive" alt="" src="<?php echo $productImage; ?>" />
+		<img class="img-responsive" alt="" src="<?= $productImage; ?>" />
 	</div>
 <?php endif ?>
 

@@ -40,7 +40,7 @@ class Related extends \Magento\Catalog\Block\Product\AbstractProduct
     private $moduleManager;
 
     /**
-     * @var MGS\AjaxCart\Helper\Data
+     * @var \MGS\AjaxCart\Helper\Data
      */
     protected $aHelper;
 
@@ -50,7 +50,7 @@ class Related extends \Magento\Catalog\Block\Product\AbstractProduct
     private $checkoutSession;
 
     /**
-    * @var Magento\Framework\Data\Form\FormKey
+    * @var \Magento\Framework\Data\Form\FormKey
     */
     protected $_formKey;
 

@@ -3,10 +3,36 @@ namespace MGS\Ajaxlayernavigation\Model\Layer\Filter;
 
 class Category extends \MGS\Ajaxlayernavigation\Model\Layer\Filter\DefaultFilter
 {
-    protected $appliyedFilter;
-    
+    /**
+     * @var array
+     */
+    protected $appliedFilter;
+
+    /**
+     * @var bool
+     */
     protected $filterPlus;
 
+    /**
+     * @var \Magento\Catalog\Model\Layer\Filter\DataProvider\Category
+     */
+    protected $dataProvider;
+
+    /**
+     * @var \Magento\Framework\Escaper
+     */
+    protected $escaper;
+
+    /**
+     * Category constructor.
+     * @param ItemFactory $filterItemFactory
+     * @param \Magento\Store\Model\StoreManagerInterface $storeManager
+     * @param \Magento\Catalog\Model\Layer $layer
+     * @param ItemBuilder $itemDataBuilder
+     * @param \Magento\Framework\Escaper $escaper
+     * @param \Magento\Catalog\Model\Layer\Filter\DataProvider\CategoryFactory $categoryDataProviderFactory
+     * @param array $data
+     */
     public function __construct(
         \MGS\Ajaxlayernavigation\Model\Layer\Filter\ItemFactory $filterItemFactory,
         \Magento\Store\Model\StoreManagerInterface $storeManager,

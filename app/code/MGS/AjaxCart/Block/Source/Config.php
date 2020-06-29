@@ -3,6 +3,7 @@ namespace MGS\AjaxCart\Block\Source;
 use Magento\Framework\Json\Helper\Data as jsonHelper;
 use MGS\AjaxCart\Helper\Data as aHelper;
 use MGS\AjaxCart\Model\Source\AnimationType;
+
 /**
  * Class Config
  * @package MGS\AjaxCart\Block\Source
@@ -17,7 +18,7 @@ class Config extends \Magento\Framework\View\Element\Template
     protected $jsonHelper;
 
     /**
-     * @var MGS\AjaxCart\Helper\Data
+     * @var aHelper
      */
     protected $aHelper;
 
@@ -31,8 +32,7 @@ class Config extends \Magento\Framework\View\Element\Template
         jsonHelper $jsonHelper,
         aHelper $aHelper,
         array $data = []
-    )
-    {
+    ) {
         parent::__construct($context, $data);
         $this->jsonHelper = $jsonHelper;
         $this->aHelper = $aHelper;

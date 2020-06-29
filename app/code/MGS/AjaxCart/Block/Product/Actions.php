@@ -15,8 +15,15 @@ class Actions extends \Magento\Framework\View\Element\Template
     private $coreRegistry;
 
     /**
+     * @var \Magento\Framework\Data\Form\FormKey
+     */
+    private $formKey;
+
+    /**
+     * Actions constructor.
      * @param \Magento\Framework\View\Element\Template\Context $context
      * @param Registry $coreRegistry
+     * @param \Magento\Framework\Data\Form\FormKey $formKey
      * @param array $data
      */
     public function __construct(

@@ -56,12 +56,12 @@ class Processor
     protected $_storeManager;
 
     /**
-     * @var MGS\AjaxCart\Helper\Data
+     * @var \MGS\AjaxCart\Helper\Data
      */
     protected $aHelper;
 
     /**
-     * @var MGS\AjaxCart\Model\Source\AnimationType
+     * @var \MGS\AjaxCart\Model\Source\AnimationType
      */
     protected $animationType;
 

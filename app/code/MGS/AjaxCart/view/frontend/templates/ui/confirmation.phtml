@@ -16,9 +16,11 @@
 				</div>
 			   <div class="popup__table-col">
 					<div class="popup__column--result">
-						<p class="popup__result-title"><?php echo $block->escapeHtml(__('Cart Subtotal')) ?>: <?php /* @noEscape */ echo $block->getCartSubtotal() ?></p>
+						<p class="popup__result-title"><?php echo $block->escapeHtml(__('Cart Subtotal')) ?>: <?= /* @noEscape */ $block->getCartSubtotal() ?></p>
 						<?php if($block->getIsCart()) { ?>
-							<div class="popup__result-view-cart text-center"><button class="btn btn-xs btn-default" type="button" onclick="setLocation('<?php echo $block->getUrl('checkout/cart') ?>');"><?php echo $block->escapeHtml(__('View Cart')) ?></button></div>
+							<div class="popup__result-view-cart text-center">
+                                <button class="btn btn-xs btn-default" type="button" onclick="setLocation('<?= $block->getUrl('checkout/cart') ?>');"><?= $block->escapeHtml(__('View Cart')) ?></button>
+                            </div>
 						<?php } ?>
 					</div>
 				</div>
@@ -26,14 +28,14 @@
         </div>
 		<?php if($block->getIsCheckout()): ?>
 			<div class="popup__actions-wrapper">
-				<button class="popup__action-redirect--checkout btn btn-primary" data-action="redirect-checkout" data-href="<?php /* @noEscape */ echo $block->getUrl('checkout') ?>"><?php echo $block->escapeHtml(__('Proceed to Checkout')) ?></button>
+				<button class="popup__action-redirect--checkout btn btn-primary" data-action="redirect-checkout" data-href="<?= /* @noEscape */ $block->getUrl('checkout') ?>"><?= $block->escapeHtml(__('Proceed to Checkout')) ?></button>
 			</div>
 		<?php endif ?>
     </div>
 <script>
     require(["jquery"], function ($) {
         jQuery(document).ready(function() {
-            
+
             jQuery('.mfp-mgs-quickview-frame').addClass('success-ajax--popup');
             jQuery('.success-ajax--popup').removeClass('mfp-mgs-quickview-frame');
             
@@ -57,6 +59,5 @@
                 window.location.href = jQuery(this).attr('data-href');
             })
         });
-
     });
 </script>

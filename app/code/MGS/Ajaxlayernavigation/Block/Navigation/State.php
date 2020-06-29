@@ -1,9 +1,12 @@
 <?php
 namespace MGS\Ajaxlayernavigation\Block\Navigation;
- 
+
+/**
+ * Class State
+ * @package MGS\Ajaxlayernavigation\Block\Navigation
+ */
 class State extends \Magento\LayeredNavigation\Block\Navigation\State
 {
-
     public function getAppliedFilters()
     {
         $filters = $this->getLayer()->getState()->getFilters();
@@ -30,5 +33,4 @@ class State extends \Magento\LayeredNavigation\Block\Navigation\State
             ]
         );
     }
- 
 }

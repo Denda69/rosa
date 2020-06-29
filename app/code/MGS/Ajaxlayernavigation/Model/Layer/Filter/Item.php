@@ -3,6 +3,13 @@ namespace MGS\Ajaxlayernavigation\Model\Layer\Filter;
 
 class Item extends \Magento\Catalog\Model\Layer\Filter\Item
 {
+    /**
+     * Item constructor.
+     * @param \Magento\Framework\UrlInterface $url
+     * @param \Magento\Theme\Block\Html\Pager $htmlPagerBlock
+     * @param \MGS\Ajaxlayernavigation\Helper\Config $configHelper
+     * @param array $data
+     */
     public function __construct(
         \Magento\Framework\UrlInterface $url,
         \Magento\Theme\Block\Html\Pager $htmlPagerBlock,
