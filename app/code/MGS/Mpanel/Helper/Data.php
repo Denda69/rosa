@@ -1995,13 +1995,17 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         if ($customer->getId() || $customer->getEmail()) {
             if($time>="06:00" && $time<="10:59"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì sáng nay?');
-            } else if($time>="11:00" && $time<="12:59"){
+            }
+            if($time>="11:00" && $time<="12:59"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì trưa nay?');
-            } else if($time>="13:00" && $time<="17:59"){
+            }
+            if($time>="13:00" && $time<="17:59"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì chiều nay?');
-            } else if($time>="18:00" && $time<="21:00"){
+            }
+            if($time>="18:00" && $time<="21:20"){
                 $placeholder = __("Xin chào "). $customer->getName() . ','. __(' bạn muốn tìm gì tối nay?');
-            } else {
+            }
+            if($time>="21:01" && "05:59"<=$time){
                 $placeholder = __("Tìm tên, sản phẩm, thương hiệu... ?");
             }
         } else {
