@@ -152,6 +152,7 @@ return [
         'RosalynShop_Base' => 1,
         'RosalynShop_FacebookChat' => 1,
         'RosalynShop_PriceDecimal' => 1,
+        'RosalynShop_Productslider' => 1,
         'RosalynShop_RegionManager' => 1,
         'RosalynShop_SalesEmail' => 1,
         'Temando_Shipping' => 1,
