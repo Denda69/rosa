@@ -15,7 +15,7 @@ $size = $themeHelper->getImageSize($this->getRatio());
         <?php $productImage = $_imagehelper->init($_product, 'category_page_grid')->resize($size['width'], $size['height'])->getUrl(); ?>
         <li class="product-item">
             <div class="product-item-inner">
-                <div class="product-image"><a href="<?= $_product->getProductUrl()?>"><img src="<?= $productImage ?>" /></a></div>
+                <div class="product-image"><img src="<?= $productImage ?>"/></div>
                 <div class="product-price"><span><?= $block->getProductPrice($_product) ?></span></div>
                 <div class="product-title"><span><a href="<?= $_product->getProductUrl()?>"><?= $_product->getName();?></a></span></div>
             </div>
